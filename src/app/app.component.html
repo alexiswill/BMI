@@ -1,0 +1,33 @@
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4" style="text-align:center">{{ title }}</h1>
+  </div>
+</div>
+      <div class="card"></div>
+        
+      
+   
+      
+      
+        
+            <div class="card-body">
+                <div class="form-group">
+                    <div class="form-group d-flex flex-row">
+                      <div class="row calculator">
+                        <div class="col-sm">
+
+             <label>Weight:</label>
+            <br>pounds<input [(ngModel)]="num1"  type="number"  name="num1" class="pounds" min="1"required>
+
+            <label>Height:</label>
+            <br>feet <input [(ngModel)]="num2" type="number"  name="num2"  class="feet" min="1" max="8"><br><br>
+            inches <input [(ngModel)]="num3" type="number"  name="num3"  class="inches"  min="1" max="11"> 
+            <br><br><button type="button" class="btn btn-primary"(click) = 'calculate()'>Calculate</button>
+            <h4>{{result}}</h4>
+                    </div>
+                </div>
+                
+                    </div>
+            </div>
+      
